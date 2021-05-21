@@ -1,0 +1,21 @@
+pip install django==3.0.3
+
+django-admin startproject <project_name>
+python39 manage.py runserver
+python39 manage.py startapp <app_name>
+
+PROJECT files:
+manage.py -> to run commands connected with the project
+wsgi.py/asgi.py -> provide hooks for webservers like Apache (django running on a live webside)
+settings.py -> confligures the django project
+urls.py -> routes web rwquests based on URL
+
+
+APP files:
+apps.py -> constrols app's specific settings 
+models.py -> data layout to construct database schema and queries
+admin.py -> administrative interface for app that allows to see and edit data related to app
+urls.py -> for URL routing specific for app
+views.py -> logic and control flow for handling requests and defines the HTTP resposnes that will return
+tests.py -> for writing unit tests 
+migrations/ -> holds files that django uses to migrate the database as we change and create schema over time
